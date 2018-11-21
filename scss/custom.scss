@@ -1,0 +1,71 @@
+// Custom styling
+body {
+    font-family: "Poppins", sans-serif;
+}
+.navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 3;
+    .nav-item {
+        font-size: 1.2rem;
+    }
+    #my-title {
+        font-size: 1.5rem;
+    }
+    .nav-link:hover {
+        transition: border 0.2s;
+        border-bottom: 1px solid white;
+    }
+}
+#showcase {
+    background: url("http://www.hdcarwallpapers.com/walls/2016_nissan_murano-HD.jpg") top center / cover no-repeat;
+    min-height: 750px;
+    position: relative;
+    #header {
+        z-index: 2;
+    }
+    #overlay {
+        background: rgba(0,0,0,0.3);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    h1 {
+        font-family: 'Allerta Stencil', sans-serif;
+        line-height: 0.8;
+    }
+    #do-it-btn {
+        font-size: 1.5rem;
+        border-radius: 2rem;
+    }
+}
+#quotes {
+    i {
+        opacity: 0.3;
+    }
+}
+#footer {
+    font-weight: 100;
+}
+@media(max-width: 768px){
+    .navbar {
+        background: #1f1f1f;
+        .nav-link:hover {
+            border-bottom: none;
+        }
+    }
+    #showcase {
+        min-height: 500px;
+        h1 {
+            font-size: 4rem;
+        }
+        #do-it-btn {
+            margin-top: 10px;
+        }
+    }
+} 
